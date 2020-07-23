@@ -14,6 +14,7 @@ library(tidyverse)
 mpg
 
 # basic version of the plot 
-my_first_plot <- ggplot(data = mpg)
+my_first_plot <- ggplot(data = mpg) +
+    geom_point(mapping = aes(x = displ, y = hwy))
 
 my_first_plot
